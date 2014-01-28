@@ -20,6 +20,8 @@ var label = Ti.UI.createLabel({
 });
 ```
 
+***Remember:*** when you use Dynamic Type, the interface **does not update automatically** if has already been created and the user changes the system font size. This is the expected behaviour on iOS 7.
+
 Support for Android
 -------------------
 
