@@ -1,39 +1,32 @@
-// This is a test harness for your module
-// You should do something interesting in this harness 
-// to test out the module and to provide instructions 
-// to users on how to use it by example.
 
+var dynamictype;
 
-// open a single window
-var win = Ti.UI.createWindow({
-	backgroundColor:'white'
-});
-var label = Ti.UI.createLabel();
-win.add(label);
-win.open();
+try {
+	// We use a try/catch to support, for example, Android
+	dynamictype = require('it.smc.dynamictypeutils')
+}
+catch (e) {}
 
-// TODO: write your module tests here
-var TiDynamicTypeUtils = require('it.smc.dynamictypeutils');
-Ti.API.info("module is => " + TiDynamicTypeUtils);
-
-label.text = TiDynamicTypeUtils.example();
-
-Ti.API.info("module exampleProp is => " + TiDynamicTypeUtils.exampleProp);
-TiDynamicTypeUtils.exampleProp = "This is a test value";
-
-if (Ti.Platform.name == "android") {
-	var proxy = TiDynamicTypeUtils.createExample({
-		message: "Creating an example Proxy",
-		backgroundColor: "red",
-		width: 100,
-		height: 100,
-		top: 100,
-		left: 150
-	});
-
-	proxy.printMessage("Hello world!");
-	proxy.message = "Hi world!.  It's me again.";
-	proxy.printMessage("Hello world!");
-	win.add(proxy);
+function getFontSize(type, def) {
+	if (!dynamictype) return def;
+	else return dynamictype.getFontSize(type) || def;
 }
 
+setup();
+
+function setup() {
+
+	var window = Ti.UI.createWindow({
+		background: 'white'
+	});
+
+	window.addEventListener('close', setup);
+
+	var label = Ti.UI.createLabel({
+		text: 'Hallo, my fellow developer',
+		font: {
+			fontSize: getFontSize(Ti.UI.TEXT_STYLE_SUBHEADLINE)
+		}
+	});
+
+}

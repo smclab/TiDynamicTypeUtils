@@ -6,14 +6,13 @@ TiDynamicTypeUtils
 [rls]: https://github.com/smclab/TiDynamicTypeUtils/releases
 [exm]: https://github.com/smclab/TiDynamicTypeUtils/tree/master/example
 
-Use Dynamic Type in your Titanium SDK application!
+Use Dynamic Type, introduced by iOS 7, in your Titanium SDK application!
 
 
 Example
 -------
 
-An extensive example can be found in `example/app.js`, the following one just acts as an overview.
-
+To see a complete example have a look at `example/app.js`.
 
 ```js
 var dynamictype = require('it.smc.dynamictypeutils')
