@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 0.0.1
+apiversion: 2
+description: TiDynamicTypeUtils gives you access to dynamic system font sizes (iOS 7)
+author: Pier Paolo Ramon
+license: LGPL2.1
+copyright: 2014 (c) SMC Treviso s.r.l.
+
+
+# these should not be edited
+name: TiDynamicTypeUtils
+moduleid: it.smc.dynamictypeutils
+guid: 109fa557-7abf-4132-bf8d-2f2b04e19fdf
+platform: iphone
+minsdk: 3.2.0.GA

@@ -1,0 +1,2 @@
+#!/bin/bash
+./build.py && rm -rf ~/Library/Application\ Support/Titanium/modules/iphone/it.smc.dynamictypeutils && unzip it.smc.dynamictypeutils-iphone-0.0.1.zip -d ~/Library/Application\ Support/Titanium/
