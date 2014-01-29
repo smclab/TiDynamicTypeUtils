@@ -1,6 +1,11 @@
 TiDynamicTypeUtils
 ==========
 
+### [Download][rls] [Example][exm]
+
+[rls]: https://github.com/smclab/TiDynamicTypeUtils/releases
+[exm]: https://github.com/smclab/TiDynamicTypeUtils/tree/master/example
+
 Use Dynamic Type in your Titanium SDK application!
 
 
