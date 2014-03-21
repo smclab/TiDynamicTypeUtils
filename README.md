@@ -1,18 +1,40 @@
 TiDynamicTypeUtils
 ==========
 
-### [Download][rls] [Example][exm]
+[![Built for Titanium SDK][ti-badge]][ti]
+[![Available through gitTio][gittio-badge]][gittio-page]
 
-[rls]: https://github.com/smclab/TiDynamicTypeUtils/releases
-[exm]: https://github.com/smclab/TiDynamicTypeUtils/tree/master/example
+[ti-badge]: http://www-static.appcelerator.com/badges/titanium-git-badge-sq.png
+[ti]: http://www.appcelerator.com/titanium/
+[gittio-badge]: http://gitt.io/badge.png
+[gittio-page]: http://gitt.io/component/it.smc.dynamictypeutils
 
 Use Dynamic Type, introduced by iOS 7, in your Titanium SDK application!
 
+### Installation
 
-Example
--------
+You can install this module using [gitTio][gittio-cli] with
 
-To see a complete example have a look at `example/app.js`.
+    gittio install it.smc.dynamictypeutils
+
+Alternatively you can [download a specific release][rls] for manual installation.
+
+[rls]: https://github.com/smclab/TiDynamicTypeUtils/releases
+[gittio-cli]: http://gitt.io/cli
+
+### Example
+
+You can run the example running the following command
+
+    gittio demo it.smc.dynamictypeutils
+
+The source for this demo application can be found in [the `example` folder][exm].
+
+[exm]: https://github.com/smclab/TiDynamicTypeUtils/tree/master/example
+
+
+Usage overview
+--------------
 
 ```js
 var dynamictype = require('it.smc.dynamictypeutils')
